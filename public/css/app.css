@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css?family=Grand+Hotel|Open+Sans:300,400,600,700,800");
+/* a mixin for responding to different breakpoints */
+@media (min-width: 768px) {
+  .blog-row {
+    height: 0; } }
+
+.blog-row .blog-content {
+  background: #FCF5C7;
+  color: #434947;
+  height: 27rem;
+  overflow: scroll; }
+  @media (min-width: 768px) {
+    .blog-row .blog-content {
+      position: relative;
+      bottom: 26rem; } }
+  .blog-row .blog-content .article-date {
+    padding-top: 7px; }
+
+.blog-row h2.blog-name {
+  padding-top: 27px; }
+
+.blog-row .blog-post {
+  width: 90%;
+  margin: 0 auto; }
+
+/*
+
+This file is the scss for nav template
+
+*/
+.navigation .cat-item {
+  padding-top: 1rem !important; }
+
+.navigation .main-logo {
+  position: absolute;
+  z-index: 10;
+  top: 5px; }
+
+@media (min-width: 992px) {
+  .navigation #dropdownMenuButton {
+    right: 27px;
+    width: 100%; }
+  .navigation .main-logo {
+    top: 2px !important;
+    left: 16px !important; } }
+
+@media (min-width: 768px) {
+  .navigation #dropdownMenuButton {
+    position: relative;
+    top: 15px; }
+  .navigation .search-wrap input {
+    height: 38px;
+    position: relative;
+    top: 10px; }
+  .navigation .fa-search {
+    top: -19px; }
+  .navigation .dropdown-menu-categories {
+    top: 58px !important; }
+  .navigation .category-items {
+    padding-top: 10px; }
+  .navigation .main-logo {
+    top: 18px;
+    left: 30px; } }
+
+.navigation .btn {
+  background: none;
+  font-family: "Open Sans", sans-serif;
+  color: #58585B; }
+
+.navigation .ruffle-logo {
+  font-family: "Grand Hotel", cursive;
+  color: #58585B; }
+
+.navigation .dropdown-toggle, .navigation .search-wrap input {
+  width: 100%;
+  font-family: "Open Sans", sans-serif; }
+
+.navigation .search-wrap input {
+  border: 1px solid #B8B8B8; }
+
+.navigation .search-wrap {
+  padding-top: 6px;
+  z-index: 2; }
+
+.navigation .fa-search {
+  position: relative;
+  float: right;
+  z-index: 50;
+  bottom: 25px;
+  right: 7px; }
+
+.navigation .mobile-menu-wrap {
+  position: relative; }
+  .navigation .mobile-menu-wrap .nav-btn {
+    position: inherit;
+    top: 13px;
+    right: 18px;
+    height: 40px;
+    width: 40px;
+    background: #F2E86D;
+    border: 1px solid #2E3532; }
+  .navigation .mobile-menu-wrap .mobile-menu {
+    display: none;
+    border: 1px solid black;
+    width: 220px;
+    position: relative;
+    top: 12px;
+    right: 18px;
+    z-index: 30;
+    background: #F2E86D; }
+    .navigation .mobile-menu-wrap .mobile-menu ul {
+      position: inherit;
+      top: 7px;
+      list-style-type: none; }
+    .navigation .mobile-menu-wrap .mobile-menu a {
+      color: #2E3532;
+      text-decoration: none; }
+
+.navigation .dropdown-menu-categories {
+  position: absolute;
+  display: none;
+  top: 38px;
+  z-index: 15;
+  background: #FFFFFF;
+  padding-bottom: 17px; }
+
+.navigation .btn-wrap button {
+  padding: 1rem; }
+
+.promotion-bar {
+  background-color: #F2E86D;
+  height: 35px;
+  line-height: 30px;
+  width: 100%; }
+  .promotion-bar .shipping-deal {
+    color: #434947;
+    line-height: 1.9;
+    padding-left: 10px;
+    text-align: center; }
+  .promotion-bar .promo-right a {
+    color: #58585B;
+    text-decoration: none; }
+  .promotion-bar .logo-right-h2 {
+    font-size: 1.3rem; }
+  .promotion-bar .text-right {
+    position: relative; }
+  .promotion-bar .why-shop {
+    line-height: 1.7;
+    padding-right: 10px; }
+
+/* This scss is for the main hero template*/
+.main-dog-section {
+  position: relative;
+  font-family: "Open Sans", sans-serif; }
+  @media (min-width: 1200px) {
+    .main-dog-section .owner-text {
+      bottom: 14rem !important; } }
+  @media (min-width: 992px) {
+    .main-dog-section .ruffle-span {
+      line-height: 1.3; }
+    .main-dog-section .find-out-more {
+      width: 289px !important;
+      height: 55px !important; } }
+  @media (min-width: 768px) {
+    .main-dog-section .dog-owner {
+      width: 280px; }
+    .main-dog-section .find-out-more {
+      background: #F2E86D;
+      width: 230px;
+      height: 36px;
+      padding: 5px; }
+    .main-dog-section .petshop-h1 {
+      line-height: 1.4; } }
+  .main-dog-section .img-fluid {
+    width: 100%;
+    height: auto; }
+  .main-dog-section .ruffle-span {
+    font-family: "Grand Hotel", cursive; }
+  .main-dog-section .dog-owner {
+    width: 180px;
+    z-index: 30; }
+  .main-dog-section .owner-text {
+    position: absolute;
+    top: 50%;
+    transform: translate(8%, -50%); }
+  .main-dog-section .find-out-more {
+    position: relative;
+    background: #F2E86D;
+    font-weight: 700;
+    border: none;
+    padding: 7px;
+    width: 170px; }
+    .main-dog-section .find-out-more a {
+      color: #58585B;
+      text-decoration: none; }
+  .main-dog-section .find-out-span {
+    float: left;
+    color: #58585B; }
+  .main-dog-section .fa-chevron-right {
+    padding: 5px;
+    float: right; }
+  .main-dog-section .fa-chevron-right:before {
+    content: "\f054";
+    padding-left: 5px; }
+
+.breed {
+  font-family: "Open Sans", sans-serif; }
+  @media (min-width: 768px) {
+    .breed .row.best-pal-row {
+      position: relative;
+      top: 30px; }
+    .breed .offset-1 {
+      margin-left: 0; }
+    .breed .ruffle-best-pal {
+      padding-left: 14px;
+      padding-top: 0 !important; } }
+  .breed .ruffle-best-pal {
+    padding-top: 11px;
+    text-align: center;
+    width: 100%;
+    color: #434947; }
+    @media (min-width: 768px) and (max-width: 576px) {
+      .breed .ruffle-best-pal {
+        padding-top: 20px; } }
+  .breed .breed-toggle {
+    background: white;
+    border: 1px solid #B8B8B8; }
+  .breed .breed-toggle {
+    width: 100%; }
+  .breed .go {
+    height: 38px;
+    background: #434947;
+    border: none;
+    color: #F1F7EE;
+    width: 60%; }
+  .breed .breed-li a {
+    text-decoration: none;
+    color: #58585B; }
+  .breed li {
+    padding: 10px; }
+  .breed .dropdown-menu {
+    top: 36px;
+    left: 16px; }
+
+/* This is for the toys template */
+.toys-header {
+  font-family: "Open Sans", sans-serif;
+  padding: 30px; }
+
+.toys-container {
+  color: #58585B; }
+  .toys-container .toy {
+    width: 116px; }
+  .toys-container .toy-item {
+    text-align: center; }
+  @media (min-width: 768px) {
+    .toys-container .offset-1 {
+      margin-left: 0; } }
+  .toys-container p {
+    position: relative;
+    bottom: 8px; }
+  .toys-container .toy-name, .toys-container .category {
+    text-align: center; }
+
+.footer-content {
+  background: #434947;
+  color: #F1F7EE;
+  padding-bottom: 18px; }
+  .footer-content h2, .footer-content h3, .footer-content p, .footer-content span {
+    font-weight: 500; }
+  @media (min-width: 992px) {
+    .footer-content .subscribe-btn {
+      width: 100%;
+      top: 33px;
+      right: 20px; } }
+  .footer-content a {
+    text-decoration: none;
+    color: #F1F7EE;
+    font-weight: 100; }
+  .footer-content .logo-name, .footer-content .questions {
+    padding: 10px; }
+  @media (min-width: 768px) {
+    .footer-content .logo-questions {
+      position: relative;
+      top: 25px; } }
+  @media (min-width: 768px) {
+    .footer-content .newsletter-socialmedia {
+      padding-top: 25px; } }
+  @media (min-width: 768px) {
+    .footer-content .footer-links {
+      position: relative;
+      top: 40px; } }
+  .footer-content .logo-h2 {
+    font-family: "Grand Hotel", cursive; }
+  .footer-content .logo-h2, .footer-content .logo-side-text {
+    display: inline; }
+  .footer-content .logo-side-text {
+    position: relative;
+    top: 18px;
+    right: 16px; }
+  .footer-content ul {
+    list-style: none; }
+  .footer-content .newsletter, .footer-content .subscribe {
+    position: relative;
+    left: 15px; }
+  @media (min-width: 768px) {
+    .footer-content .offset-2 {
+      margin-left: 0; } }
+  .footer-content .subscribe {
+    top: 5px; }
+  .footer-content .subscribe-btn {
+    background-color: #F1F7EE;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    padding: 6px;
+    color: #434947;
+    width: 60%; }
+  .footer-content .subscribe-input {
+    border: none;
+    padding: 5px; }
+  .footer-content .subscribe-input {
+    width: 100%; }
+  .footer-content .socialmedia {
+    padding: 10px; }
+    .footer-content .socialmedia a {
+      padding-left: 12px; }
+      @media (min-width: 768px) {
+        .footer-content .socialmedia a {
+          padding-left: 10px; } }
+  .footer-content .logo-footer {
+    padding-top: 20px; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Open Sans", sans-serif;
+  color: #58585B;
+  overflow-x: hidden; }
+  body h2, body h3 {
+    font-size: 0.7rem;
+    font-weight: 700; }
+    @media screen and (min-width: 0) {
+      body h2, body h3 {
+        font-size: 1rem; } }
+    @media screen and (min-width: 768px) {
+      body h2, body h3 {
+        font-size: 1.1rem; } }
+    @media screen and (min-width: 992px) {
+      body h2, body h3 {
+        font-size: 1.3rem; } }
+  body .logo-h2 {
+    font-family: "Grand Hotel", cursive;
+    font-size: 2.4rem; }
+    @media screen and (min-width: 0) {
+      body .logo-h2 {
+        font-size: 2rem; } }
+    @media screen and (min-width: 768px) {
+      body .logo-h2 {
+        font-size: 3.8rem; } }
+  body .main-logo {
+    font-family: "Grand Hotel", cursive;
+    font-size: 1.5rem; }
+    @media screen and (min-width: 0) {
+      body .main-logo {
+        font-size: 2.3rem; } }
+    @media screen and (min-width: 768px) {
+      body .main-logo {
+        font-size: 2.8rem; } }
+    @media screen and (min-width: 992px) {
+      body .main-logo {
+        font-size: 4.4rem; } }
+  body .container-fluid {
+    padding: 0; }
+  @media (min-width: 0) {
+    body .h2favorite {
+      font-size: 1.4rem; } }
+  @media (min-width: 1800px) {
+    body .col-xxxxl-3 {
+      max-width: 22.333333%; } }
+  body button {
+    z-index: 10;
+    position: relative; }
+
+/*# sourceMappingURL=app.css.map */

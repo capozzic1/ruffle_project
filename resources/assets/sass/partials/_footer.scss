@@ -1,0 +1,134 @@
+
+//This is for the footer template
+
+
+.footer-content {
+background: $gray-dark;
+color: $off-white;
+padding-bottom: 18px;
+
+    h2, h3, p, span{
+      font-weight: 500;
+    }
+
+    @include respond-to(lg){
+      .subscribe-btn{
+        width: 100%;
+        top: 33px;
+        right: 20px;
+
+      }
+
+    }
+
+    a {
+      text-decoration: none;
+      color:$off-white;
+      font-weight: 100;
+    }
+
+    .logo-name, .questions{
+      padding: 10px;
+    }
+
+    .logo-questions {
+      @include respond-to(md){
+        position: relative;
+        top: 25px;
+      }
+
+    }
+
+    .newsletter-socialmedia {
+      @include respond-to(md){
+            padding-top: 25px;
+      }
+
+    }
+
+    .footer-links {
+      @include respond-to(md){
+      position: relative;
+      top: 40px;
+      }
+    }
+
+
+    .logo-h2 {
+      font-family: $grand-hotel;
+
+    }
+
+    .logo-h2, .logo-side-text {
+      display: inline;
+    }
+
+    .logo-side-text {
+      position: relative;
+      top: 18px;
+      right: 16px;
+    }
+
+    ul {
+      list-style: none;
+      }
+
+    .newsletter {
+      position: relative;
+      left: 15px;
+      }
+
+    .offset-2 {
+      @include respond-to(md){
+      margin-left: 0;
+      }
+
+    }
+
+    .subscribe {
+      @extend .newsletter;
+      top: 5px;
+      }
+
+
+      .subscribe-btn {
+        background-color:$off-white;
+        border: none;
+        font-family: $open-sans;
+        padding: 6px;
+        color:$gray-dark;
+        width: 60%;
+      }
+
+      .subscribe-input {
+        border:none;
+        padding: 5px;
+
+      }
+
+      .subscribe-input {
+        width: 100%;
+      }
+
+      .socialmedia {
+        padding: 10px;
+
+          a {
+            padding-left: 12px;
+            @include respond-to(md){
+              padding-left: 10px;
+            }
+          }
+
+        }
+
+        .list1, .list2 {
+          @include respond-to(md){
+
+            }
+          }
+
+        .logo-footer {
+            padding-top: 20px;
+          }
+      }

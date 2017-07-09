@@ -1,0 +1,35 @@
+//This is for the promotions template
+
+.promotion-bar {
+
+	background-color: $yellow;
+	height: 35px;
+	line-height: 30px;
+	width: 100%;
+
+	.shipping-deal{
+		color: $gray-dark;
+		line-height: 1.9;
+		padding-left: 10px;
+		text-align:center;
+	}
+
+	.promo-right a{
+		color: $brand-primary;
+		text-decoration: none;
+	}
+
+	.logo-right-h2 {
+		font-size: 1.3rem;
+	}
+
+	.text-right {
+    position: relative;
+
+	}
+
+	.why-shop {
+    line-height: 1.7;
+    padding-right: 10px;
+	}
+}

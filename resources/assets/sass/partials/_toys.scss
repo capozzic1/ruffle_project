@@ -1,0 +1,36 @@
+/* This is for the toys template */
+
+.toys-header {
+  font-family:$open-sans;
+  padding: 30px;
+
+  }
+
+.toys-container {
+  color:$gray;
+
+    .toy{
+      width:116px
+    }
+
+    .toy-item {
+    text-align: center;
+    }
+
+    @include respond-to(md){
+      .offset-1 {
+      margin-left:0;
+      }
+    }
+
+    p {
+      position: relative;
+      bottom: 8px;
+
+    }
+
+    .toy-name, .category {
+      text-align: center;
+    }
+
+}

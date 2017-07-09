@@ -1,0 +1,114 @@
+
+@import "variables";
+
+
+/* a mixin for responding to different breakpoints */
+
+@mixin respond-to($breakpoint){
+  @if map-has-key($grid-breakpoints, $breakpoint){
+    @media (min-width: #{map-get($grid-breakpoints, $breakpoint)}){
+      @content;
+    }
+  } @else {
+
+    @warn "No value could be retrieved from '#{breakpoint}' . "
+    + "Please make sure it is defined in '$grid-breakpoints' map.";
+
+  }
+
+}
+
+@mixin respond-to-max($breakpoint){
+  @if map-has-key($grid-breakpoints, $breakpoint){
+    @media (min-width:768px) and (max-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+      @content;
+    }
+  } @else {
+
+    @warn "No value could be retrieved from '#{breakpoint}' . "
+    + "Please make sure it is defined in '$grid-breakpoints' map.";
+
+  }
+
+}
+
+@mixin respond-to-only-max($breakpoint){
+  @if map-has-key($grid-breakpoints, $breakpoint){
+    @media (max-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+      @content;
+    }
+  } @else {
+
+    @warn "No value could be retrieved from '#{breakpoint}' . "
+    + "Please make sure it is defined in '$grid-breakpoints' map.";
+
+  }
+
+}
+
+
+@mixin font-size($fs-map, $fs-breakpoints: $grid-breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      // If $fs-font-size is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+
+
+$mainh2-font-sizes: (
+null : 1.5rem,
+xs: 2.3rem,
+md: 2.8rem,
+lg: 4.4rem
+);
+
+$h2-font-sizes: (
+null : .7rem,
+xs: 1.0rem,
+md: 1.1rem,
+lg: 1.3rem
+);
+
+$logo-font-sizes: (
+null: 2.4rem,
+xs: 2rem,
+md: 3.8rem
+);
+
+
+$p-font-sizes: (
+null : .7rem,
+sm : .8rem,
+md: .9rem,
+lg: 2.8rem,
+xl: $font-size-h1
+);
+
+
+
+
+@mixin main-logo($font-size) {
+font-size: $font-size !important;
+position: absolute;
+z-index: 2;
+
+}
+
+@mixin translate($x, $y){
+  -webkit-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+   transform: translate($x, $y);
+}

@@ -1,0 +1,62 @@
+// Theme Colors
+$yellow:                #F2E86D;
+$light-yellow:          #FCF5C7;
+$white:                 #FFFFFF;
+$off-white:             #F1F7EE;
+$black:                 #2E3532;
+$gray-dark:             #434947;
+
+// Common Colors
+$red:                 	#F69B8D;
+$green:                 #009566;
+$blue:                  #0E8FA0;
+$blue-light:            #60c4b9;
+$gray-lighter:          #E5E5E5;
+$mid-gray:          		#B8B8B8;
+$gray:                  #58585B;
+
+$brand-primary:         $gray;
+$brand-success:         $green;
+$brand-info:            $blue;
+$brand-warning:         $yellow;
+$brand-danger:          $red;
+$body-color:            $black;
+
+$open-sans: 'Open Sans', sans-serif;
+$grand-hotel: 'Grand Hotel', cursive;
+
+$font-family-base:      $open-sans;
+$headings-font-family:  $open-sans;
+$headings-font-weight:  700;
+$font-size-base:        .9375rem;
+$font-size-h1:          4.8rem;
+$lead-font-size:        1.0625rem;
+
+//$link-hover-decoration: none;
+
+//$grid-gutter: 20px;
+
+$grid-breakpoints: (
+		xs: 0,
+		sm: 576px,
+		md: 768px,
+		lg: 992px,
+		xl: 1200px,
+		xxl: 1400px,
+		xxxl: 1600px,
+		xxxxl: 1800px
+);
+
+$container-max-widths: (
+		sm: 540px,
+		md: 720px,
+		lg: 960px,
+		xl: 1140px,
+		xxl: 1368px,
+		xxxl: 1560px,
+		xxxxl: 1800px
+);
+
+$border-radius:         0;
+$border-radius-lg:      0;
+$border-radius-sm:      0;

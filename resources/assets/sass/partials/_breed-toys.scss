@@ -1,0 +1,71 @@
+
+//This is for the breed-toys template
+
+.breed {
+  font-family: $open-sans;
+
+
+  @include respond-to(md){
+    .row.best-pal-row {
+        position: relative;
+        top: 30px;
+    }
+
+    .offset-1 {
+    margin-left:0;
+    }
+
+    .ruffle-best-pal {
+
+      padding-left: 14px;
+      padding-top: 0 !important;
+    }
+  }
+
+  .ruffle-best-pal {
+    padding-top: 11px;
+    text-align: center;
+    width: 100%;
+    color:$gray-dark;
+
+    @include respond-to-max(sm){
+      padding-top: 20px;
+    }
+  }
+
+
+
+  .breed-toggle {
+      background: white;
+      border: 1px solid $mid-gray;
+
+  }
+
+  .breed-toggle {
+    width: 100%;
+  }
+
+  .go {
+      height: 38px;
+      background: $gray-dark;
+      border:none;
+      color:$off-white;
+      width:60%;
+  }
+
+  .breed-li a {
+    text-decoration:none;
+    color:$gray;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+.dropdown-menu {
+      top: 36px;
+      left: 16px;
+  }
+
+
+}

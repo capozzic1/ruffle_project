@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel|Open+Sans:300,400,600,700,800');
+
+
+@import "modules/variables";
+@import "modules/mixins";
+@import "partials/blog";
+@import "partials/nav";
+@import "partials/promotions";
+@import "partials/main-hero-dog";
+@import "partials/breed-toys";
+@import "partials/toys";
+@import "partials/footer";
+
+
+
+body {
+-webkit-font-smoothing: antialiased;
+font-family: $open-sans;
+color: $brand-primary;
+overflow-x: hidden;
+
+	 h2, h3{
+	@include font-size($h2-font-sizes);
+	font-weight: $headings-font-weight;
+
+		}
+
+	.logo-h2 {
+		font-family: $grand-hotel;
+		@include font-size($logo-font-sizes);
+		}
+
+		.main-logo {
+			font-family: $grand-hotel;
+			@include font-size($mainh2-font-sizes);
+
+		}
+
+	.container-fluid {
+		padding:0;
+	}
+
+	@include respond-to(xs){
+		.h2favorite {
+			font-size: 1.4rem;
+		}
+	}
+
+	@include respond-to(xxxxl){
+		.col-xxxxl-3 {
+			max-width: 22.333333%;
+		}
+	}
+
+	button {
+	    z-index: 10;
+	    position: relative;
+	}
+
+
+}

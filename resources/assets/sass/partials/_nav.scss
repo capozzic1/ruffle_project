@@ -1,0 +1,160 @@
+/*
+
+This file is the scss for nav template
+
+*/
+
+
+.navigation {
+
+	.cat-item {
+	padding-top: 1rem !important;
+		}
+	.main-logo {
+			position: absolute;
+			z-index: 10;
+			top: 5px;
+	}
+
+		@include respond-to(lg) {
+
+			#dropdownMenuButton{
+				right: 27px;
+				width: 100%;
+			}
+
+			.main-logo {
+				top: 2px !important;
+		    left: 16px !important;
+			}
+		}
+
+
+		@include respond-to(md){
+			#dropdownMenuButton{
+				position: relative;
+				top: 15px;
+			}
+
+			.search-wrap input {
+				height: 38px;
+				position: relative;
+				top: 10px;
+			}
+
+			.fa-search {
+				top: -19px;
+			}
+
+
+			.dropdown-menu-categories {
+				top:58px !important;
+			}
+
+			.category-items {
+    	padding-top: 10px;
+			}
+
+			.main-logo {
+		    top: 18px;
+		    left: 30px;
+			}
+
+
+
+		}
+
+
+		.btn {
+			background: none;
+			font-family: $open-sans;
+			color:$gray;
+
+			}
+
+		.ruffle-logo {
+			font-family: $grand-hotel;
+			color: $brand-primary;
+
+		}
+
+
+		.dropdown-toggle, .search-wrap input {
+			width: 100%;
+			font-family: $open-sans;
+
+		}
+
+		.search-wrap input {
+		border: 1px solid $mid-gray;
+
+		}
+
+		.search-wrap {
+  	  padding-top: 6px;
+			z-index: 2;
+
+		}
+
+		.fa-search {
+	    position: relative;
+	    float: right;
+	    z-index: 50;
+	    bottom: 25px;
+	    right: 7px;
+
+		}
+
+		.mobile-menu-wrap{
+			position:relative;
+
+					.nav-btn {
+					position:inherit;
+					top: 13px;
+					right: 18px;
+					height: 40px;
+					width: 40px;
+					background:$yellow;
+					border:1px solid $black;
+					}
+
+
+					.mobile-menu {
+						display:none;
+						border:1px solid black;
+						width: 220px;
+						position: relative;
+						top: 12px;
+						right: 18px;
+						z-index: 30;
+						background: $yellow;
+
+						ul {
+						position:inherit;
+						top: 7px;
+						list-style-type: none;
+
+						}
+
+						a {
+							color:$black;
+							text-decoration: none;
+						}
+					}
+				}
+
+
+				.dropdown-menu-categories {
+					position: absolute;
+    			display: none;
+					top: 38px;
+					z-index: 15;
+					background: $white;
+					padding-bottom: 17px;
+				}
+
+				.btn-wrap button{
+					padding: 1rem;
+				}
+
+ }

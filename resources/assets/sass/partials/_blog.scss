@@ -1,0 +1,42 @@
+
+
+//This scss is for the blog template
+
+.blog-row {
+
+
+  @include respond-to(md){
+    height: 0;
+  }
+
+.blog-content {
+background: $light-yellow;
+color:$gray-dark;
+
+height: 27rem;
+overflow: scroll;
+
+  @include respond-to(md){
+    position: relative;
+    bottom: 26rem;
+
+  }
+
+
+  .article-date {
+
+    padding-top: 7px;
+  }
+
+}
+
+h2.blog-name {
+    padding-top: 27px;
+}
+
+.blog-post {
+    width: 90%;
+    margin:0 auto;
+}
+
+}

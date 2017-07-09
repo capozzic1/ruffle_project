@@ -1,0 +1,99 @@
+
+
+/* This scss is for the main hero template*/
+
+.main-dog-section {
+  position: relative;
+  font-family: $open-sans;
+
+    @include respond-to(xl){
+
+        .owner-text {
+              bottom: 14rem !important;
+        }
+    }
+    @include respond-to(lg){
+      .ruffle-span {
+        line-height: 1.3;
+      }
+      .find-out-more{
+        width: 289px !important;
+        height: 55px !important;
+        }
+
+
+    }
+      @include respond-to(md) {
+
+          .dog-owner{
+            width: 280px;
+          }
+
+          .find-out-more {
+              background: #F2E86D;
+              width: 230px;
+              height: 36px;
+              padding: 5px;
+
+          }
+
+          .petshop-h1{
+    				line-height: 1.4;
+    				}
+      }
+  //set to 100% for xl+ screens
+      .img-fluid {
+      width: 100%;
+      height: auto;
+    }
+
+    .ruffle-span {
+    font-family:$grand-hotel;
+
+    }
+
+
+    .dog-owner {
+      width: 180px;
+
+      z-index: 30;
+
+      }
+
+    .owner-text {
+      position: absolute;
+      top:50%;
+      @include translate(8%, -50%);
+      }
+
+    .find-out-more {
+      position: relative;
+      background: $yellow;
+      font-weight:700;
+      border: none;
+
+      padding: 7px;
+      width: 170px;
+
+          a {
+        color:$gray;
+        text-decoration: none;
+        }
+    }
+
+    .find-out-span {
+    float: left;
+    color:$gray;
+    }
+
+    .fa-chevron-right {
+        padding: 5px;
+        float: right;
+    }
+
+    .fa-chevron-right:before {
+      content: "\f054";
+      padding-left: 5px;
+    }
+
+}
